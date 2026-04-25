@@ -61,8 +61,8 @@ function transportLegHtml(leg) {
         <div class="place">${escapeHtml(leg.from)} → ${escapeHtml(leg.to)}</div>
         <div class="detail">${escapeHtml(leg.estimated_time)} · ${escapeHtml(leg.estimated_cost)}</div>
         <p>${escapeHtml(leg.why)}</p>
-        <div class="detail">备选：${escapeHtml((leg.alternatives || []).join(" / "))}</div>
-        <div class="detail">痛点：${escapeHtml((leg.pain_points || []).join(" / "))}</div>
+        ${(leg.alternatives || []).length ? `<div class="detail">备选：${escapeHtml(leg.alternatives.join(" / "))}</div>` : ""}
+        ${(leg.pain_points || []).length ? `<div class="detail">痛点：${escapeHtml(leg.pain_points.join(" / "))}</div>` : ""}
       </div>
     </section>`;
 }

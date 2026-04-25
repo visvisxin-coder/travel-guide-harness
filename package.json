@@ -12,6 +12,5 @@
     "preview": "npm run render:all",
     "create": "node scripts/create_guide.js",
     "test": "node tests/run_tests.js"
-  },
-  "dependencies": {}
+  }
 }

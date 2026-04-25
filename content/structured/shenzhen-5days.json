@@ -270,41 +270,58 @@
             "from": "酒店出发",
             "to": "莲花山公园（少年宫站）",
             "recommended_mode": "地铁",
-            "alternatives": ["打车约20-30元"],
+            "alternatives": [
+              "打车约20-30元"
+            ],
             "estimated_time": "视住宿位置，福田区内15-25分钟",
             "estimated_cost": "3-5元",
             "why": "3/4号线少年宫站F1口出站步行3分钟即达莲花山公园入口",
-            "pain_points": ["早高峰3号线稍挤"]
+            "pain_points": [
+              "早高峰3号线稍挤"
+            ]
           },
           {
             "from": "莲花山公园",
             "to": "平安金融中心",
             "recommended_mode": "步行",
-            "alternatives": ["地铁：少年宫站→市民中心站1站"],
+            "alternatives": [
+              "地铁：少年宫站→市民中心站1站"
+            ],
             "estimated_time": "15分钟",
             "estimated_cost": "免费",
             "why": "莲花山南门直通市民中心广场，穿过广场就是平安金融中心，步行最方便还能看中轴景观",
-            "pain_points": ["5月中午较晒", "广场开阔无遮荫"]
+            "pain_points": [
+              "5月中午较晒",
+              "广场开阔无遮荫"
+            ]
           },
           {
             "from": "平安金融中心",
             "to": "深圳博物馆",
             "recommended_mode": "步行",
-            "alternatives": [],
+            "alternatives": [
+              "打车约起步价"
+            ],
             "estimated_time": "10分钟",
             "estimated_cost": "免费",
             "why": "平安金融中心和深圳博物馆都在市民中心同一片区，步行穿过广场即达",
-            "pain_points": []
+            "pain_points": [
+              "步行穿过广场约10分钟，5月中午较晒"
+            ]
           },
           {
             "from": "深圳博物馆",
             "to": "COCO Park/市民中心灯光秀",
             "recommended_mode": "步行",
-            "alternatives": [],
+            "alternatives": [
+              "打车约起步价"
+            ],
             "estimated_time": "10分钟",
             "estimated_cost": "免费",
             "why": "都在福田CBD核心区，步行最方便",
-            "pain_points": []
+            "pain_points": [
+              "傍晚市民中心广场人较多"
+            ]
           }
         ]
       },
@@ -315,51 +332,72 @@
             "from": "酒店出发",
             "to": "凤凰楼（早茶）",
             "recommended_mode": "步行或打车",
-            "alternatives": [],
+            "alternatives": [
+              "打车约15元"
+            ],
             "estimated_time": "视住宿位置，福田区内10-20分钟",
             "estimated_cost": "步行免费或打车约15元",
             "why": "凤凰楼在福田有分店（华强北店较近），选择离酒店最近的一家即可",
-            "pain_points": []
+            "pain_points": [
+              "早高峰时段可能堵车"
+            ]
           },
           {
             "from": "凤凰楼",
             "to": "深圳当代艺术与城市规划馆",
             "recommended_mode": "步行",
-            "alternatives": ["打车约15元"],
+            "alternatives": [
+              "打车约12元"
+            ],
             "estimated_time": "5-10分钟",
             "estimated_cost": "免费",
             "why": "凤凰楼华强北店在振华路，步行到当代艺术馆约15分钟。上午喝完早茶正好散步过去",
-            "pain_points": []
+            "pain_points": [
+              "步行约15分钟，5月上午逐渐升温"
+            ]
           },
           {
             "from": "深圳当代艺术与城市规划馆",
             "to": "华强北电子市场",
             "recommended_mode": "步行或地铁",
-            "alternatives": ["打车约15元"],
+            "alternatives": [
+              "打车约15元"
+            ],
             "estimated_time": "步行15分钟或地铁1站",
             "estimated_cost": "步行免费或地铁2元",
             "why": "当代艺术馆到华强北距离很近，步行沿华福路直达，地铁只需1站（市民中心站→华强路站）",
-            "pain_points": ["华强北步行街人流密集"]
+            "pain_points": [
+              "华强北步行街人流密集"
+            ]
           },
           {
             "from": "华强北",
             "to": "东门老街",
             "recommended_mode": "步行",
-            "alternatives": ["地铁1号线华强路站→老街站1站"],
+            "alternatives": [
+              "地铁1号线华强路站→老街站1站"
+            ],
             "estimated_time": "步行约20分钟",
             "estimated_cost": "免费",
             "why": "华强北步行至东门老街一路沿着深南东路，可以感受深圳老城区的市井氛围",
-            "pain_points": ["晚高峰深南东路人多", "傍晚天气热步行出汗"]
+            "pain_points": [
+              "晚高峰深南东路人多",
+              "傍晚天气热步行出汗"
+            ]
           },
           {
             "from": "东门老街",
             "to": "返回酒店（福田）",
             "recommended_mode": "地铁1/3号线",
-            "alternatives": ["打车约20-30元"],
+            "alternatives": [
+              "打车约20-30元"
+            ],
             "estimated_time": "约15分钟",
             "estimated_cost": "3-5元",
             "why": "老街站是1/3号线换乘站，到福田/华强北/市民中心都很方便，末班车约23:00",
-            "pain_points": ["晚高峰1号线较拥挤"]
+            "pain_points": [
+              "晚高峰1号线较拥挤"
+            ]
           }
         ]
       },
@@ -370,31 +408,43 @@
             "from": "酒店出发",
             "to": "深圳湾公园",
             "recommended_mode": "地铁",
-            "alternatives": ["打车约25-35元"],
+            "alternatives": [
+              "打车约25-35元"
+            ],
             "estimated_time": "福田→深圳湾公园约25分钟",
             "estimated_cost": "3-5元",
             "why": "9号线深圳湾公园站D2口出站即见海，最方便",
-            "pain_points": ["周末深圳湾公园站人流较大"]
+            "pain_points": [
+              "周末深圳湾公园站人流较大"
+            ]
           },
           {
             "from": "深圳湾公园",
             "to": "欢乐港湾",
             "recommended_mode": "打车",
-            "alternatives": ["地铁2号线至临海站需换乘1次"],
+            "alternatives": [
+              "地铁2号线至临海站需换乘1次"
+            ],
             "estimated_time": "15分钟",
             "estimated_cost": "约20元",
             "why": "深圳湾公园到欢乐港湾距离5公里打车最直接，地铁需要换乘较麻烦",
-            "pain_points": []
+            "pain_points": [
+              "打车下午时段深圳湾口岸附近车流量大"
+            ]
           },
           {
             "from": "欢乐港湾",
             "to": "返回酒店",
             "recommended_mode": "地铁",
-            "alternatives": ["打车约30-40元"],
+            "alternatives": [
+              "打车约30-40元"
+            ],
             "estimated_time": "25-30分钟",
             "estimated_cost": "3-5元",
             "why": "欢乐港湾附近的临海站（5号线）可直达福田，末班车约23:00",
-            "pain_points": []
+            "pain_points": [
+              "晚间临海站末班车约23:00"
+            ]
           }
         ]
       },
@@ -405,51 +455,73 @@
             "from": "酒店出发",
             "to": "大梅沙海滨公园",
             "recommended_mode": "地铁2/8号线",
-            "alternatives": ["打车约60-80元（福田出发约40分钟）"],
+            "alternatives": [
+              "打车约60-80元（福田出发约40分钟）"
+            ],
             "estimated_time": "福田→大梅沙站约40分钟",
             "estimated_cost": "6-8元",
             "why": "2/8号线贯通运营直达大梅沙站D口，比打车更可靠不堵车",
-            "pain_points": ["周末去程方向较拥挤", "车厢可能有沙子"]
+            "pain_points": [
+              "周末去程方向较拥挤",
+              "车厢可能有沙子"
+            ]
           },
           {
             "from": "大梅沙",
             "to": "背仔角灯塔",
             "recommended_mode": "打车",
-            "alternatives": ["沿海滨栈道步行约40分钟"],
+            "alternatives": [
+              "沿海滨栈道步行约40分钟"
+            ],
             "estimated_time": "15分钟",
             "estimated_cost": "约20元",
             "why": "从大梅沙一路往东，背仔角在盐田最东端打车更快。如果天气好推荐走栈道，沿途海景极佳",
-            "pain_points": ["下午栈道无遮荫注意防晒"]
+            "pain_points": [
+              "下午栈道无遮荫注意防晒"
+            ]
           },
           {
             "from": "背仔角灯塔",
             "to": "盐田海鲜街",
             "recommended_mode": "打车",
-            "alternatives": ["沿海滨栈道步行返回"],
+            "alternatives": [
+              "沿海滨栈道步行返回"
+            ],
             "estimated_time": "15分钟",
             "estimated_cost": "约20元",
             "why": "从背仔角往西返回，途径盐田海鲜街吃晚饭，路线自然不绕路",
-            "pain_points": ["返程打车高峰时段可能需等候", "背仔角附近叫车可能稍慢"]
+            "pain_points": [
+              "返程打车高峰时段可能需等候",
+              "背仔角附近叫车可能稍慢"
+            ]
           },
           {
             "from": "盐田海鲜街",
             "to": "盐田墟地铁站",
             "recommended_mode": "步行",
-            "alternatives": ["打车约12元"],
+            "alternatives": [
+              "打车约12元"
+            ],
             "estimated_time": "步行约8分钟",
             "estimated_cost": "免费",
             "why": "盐田海鲜街紧邻8号线盐田墟站B口，步行几分钟即到，无需打车。盐田墟站比小梅沙站更靠西，回福田方向不用多坐回头路",
-            "pain_points": []
+            "pain_points": [
+              "步行约8分钟，饭后散步刚好"
+            ]
           },
           {
             "from": "盐田墟站",
             "to": "返程（福田/罗湖）",
             "recommended_mode": "地铁2/8号线",
-            "alternatives": ["全程打车约80-120元可能堵车"],
+            "alternatives": [
+              "全程打车约80-120元可能堵车"
+            ],
             "estimated_time": "盐田墟站→福田约35分钟",
             "estimated_cost": "6-8元",
             "why": "地铁直达市区全程地下不受天气影响，比打车便宜且时间可控。盐田墟站是8号线中间站，去福田方向座位可能不多但比小梅沙站少坐几站",
-            "pain_points": ["周末返程方向人多"]
+            "pain_points": [
+              "周末返程方向人多"
+            ]
           }
         ]
       },
@@ -460,41 +532,58 @@
             "from": "酒店出发",
             "to": "海上世界（蛇口）",
             "recommended_mode": "地铁2号线",
-            "alternatives": ["打车约30-40元"],
+            "alternatives": [
+              "打车约30-40元"
+            ],
             "estimated_time": "福田→海上世界约25分钟",
             "estimated_cost": "4-6元",
             "why": "2号线福田直达海上世界站，A口出站就是明华轮。不用换乘很方便",
-            "pain_points": []
+            "pain_points": [
+              "早高峰2号线往蛇口方向人流适中"
+            ]
           },
           {
             "from": "海上世界",
             "to": "OCT-LOFT华侨城创意文化园",
             "recommended_mode": "打车",
-            "alternatives": ["地铁2号线海上世界站→侨城北站需换乘1次"],
+            "alternatives": [
+              "地铁2号线海上世界站→侨城北站需换乘1次"
+            ],
             "estimated_time": "15分钟",
             "estimated_cost": "约20元",
             "why": "距离不远但地铁需换乘，打车更省时省力",
-            "pain_points": []
+            "pain_points": [
+              "海上世界到OCT-LOFT约6公里，打车15分钟舒适快捷"
+            ]
           },
           {
             "from": "OCT-LOFT",
             "to": "南头古城",
             "recommended_mode": "打车",
-            "alternatives": ["地铁12号线中山公园站D口步行10分钟"],
+            "alternatives": [
+              "地铁12号线中山公园站D口步行10分钟"
+            ],
             "estimated_time": "15分钟",
             "estimated_cost": "约18元",
             "why": "打车直达南头古城南门，省去找路时间",
-            "pain_points": ["晚高峰深南大道可能堵车"]
+            "pain_points": [
+              "晚高峰深南大道可能堵车"
+            ]
           },
           {
             "from": "南头古城",
             "to": "返程（酒店/机场/深圳北站）",
             "recommended_mode": "地铁12号线（需换乘）",
-            "alternatives": ["打车约30-50元"],
+            "alternatives": [
+              "打车约30-50元"
+            ],
             "estimated_time": "35-55分钟",
             "estimated_cost": "5-8元",
             "why": "中山公园站D口步行10分钟进古城。12号线不直达福田——回福田在南山站换乘1号线或11号线；去机场在前海湾站换乘11号线直达航站楼",
-            "pain_points": ["南头古城到地铁站需步行10分钟", "12号线不能直达福田/机场航站楼，需换乘1次"]
+            "pain_points": [
+              "南头古城到地铁站需步行10分钟",
+              "12号线不能直达福田/机场航站楼，需换乘1次"
+            ]
           }
         ]
       }

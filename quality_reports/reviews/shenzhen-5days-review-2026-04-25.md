@@ -2,7 +2,7 @@
 
 ## Summary
 
-Shenzhen 5-day travel guide generated through the full 6-step Harness workflow. User preferences: first-time visitor, 5 days, modern city + sea, old-brand cheung fun, relaxed pace, medium budget. All invariants pass. All output formats rendered successfully.
+Shenzhen 5-day travel guide generated through the full 6-step Harness workflow. User preferences: first-time visitor, 5 days, modern city + sea, old-brand cheung fun, relaxed pace, medium budget. All invariants pass. All output formats rendered successfully. All 6 agent-critic pairs invoked.
 
 ## Files Reviewed
 
