@@ -30,19 +30,25 @@
 - verifier 确认 PASS 后才能交付给用户
 - 质量报告必须保存到 `quality_reports/reviews/`
 
-### 3. 单数据源
+### 3. 工作流审计（强制）
+- 生成 JSON 时必须包含 `workflow_audit` 字段，列出所有调用的 agent 和 skill
+- 交付前必须运行 `npm run audit`（或 `node scripts/audit_workflow.js content/structured/{slug}.json`）
+- audit 脚本检查产出物是否存在、agent/skill 是否完整
+- **audit FAIL 不得交付**
+
+### 4. 单数据源
 - `content/structured/{slug}.json` 是唯一权威数据源
 - Markdown 草稿、HTML、PDF、图片都必须从 JSON 生成
 - 不允许直接编辑 HTML/Markdown 添加 JSON 中没有的内容（INV-1）
 
-### 4. 质量门禁
+### 5. 质量门禁
 - Draft: ≥70 — 可继续迭代
 - Preview: ≥80 — 可生成预览
 - Client-ready: ≥90 — 可交付用户
 - Publication: ≥95 — 公开发布
 - **低于 70 必须重新调研，不能进入下一步**
 
-### 5. 所有 agent 定义和 skill 说明在 `.harness/` 目录下
+### 6. 所有 agent 定义和 skill 说明在 `.harness/` 目录下
 - Skills: `.harness/skills/*.md`
 - Agents: `.harness/agents/*.md`
 - 规则: `.harness/rules/*.md`
@@ -59,5 +65,6 @@
 
 1. 先读 config/ 下的配置文件了解用户画像
 2. 按 6 步流程执行，每一步都调 critic
-3. 完成后调用 verifier 做最终检查
-4. verifier PASS 后才算完成
+3. 生成 JSON 时必须填写 `workflow_audit` 字段
+4. 完成后先调 verifier 做最终检查，再运行 `npm run audit`
+5. verifier PASS **且** audit PASS 后才算完成

@@ -4,13 +4,14 @@
   "private": true,
   "description": "A harness-style travel guide generator that produces polished HTML pages from structured JSON content.",
   "scripts": {
-    "validate": "node scripts/validate_content.js content/structured/shanghai-3days.json",
-    "render:html": "node scripts/render_html.js content/structured/shanghai-3days.json",
-    "render:image": "node scripts/render_image.js content/structured/shanghai-3days.json",
-    "render:pdf": "node scripts/render_pdf.js content/structured/shanghai-3days.json",
-    "render:all": "node scripts/render_all.js content/structured/shanghai-3days.json",
+    "validate": "node scripts/validate_content.js",
+    "render:html": "node scripts/render_html.js",
+    "render:image": "node scripts/render_image.js",
+    "render:pdf": "node scripts/render_pdf.js",
+    "render:all": "node scripts/render_all.js",
     "preview": "npm run render:all",
     "create": "node scripts/create_guide.js",
+    "audit": "node scripts/audit_workflow.js",
     "test": "node tests/run_tests.js"
   }
 }

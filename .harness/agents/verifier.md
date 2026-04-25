@@ -29,6 +29,18 @@ You are the final verifier. Run validation scripts and inspect generated outputs
 - [ ] Backup plans present for rain and low energy (INV-6).
 - [ ] Return-visit guides respect `visited_before` and `exclude` (INV-12).
 
+### Workflow Audit
+
+- [ ] `workflow_audit` field exists in the structured JSON.
+- [ ] All 12 mandatory agents are listed in `workflow_audit.agents_invoked`:
+  `orchestrator`, `researcher`, `researcher-critic`, `route-planner`, `route-planner-critic`,
+  `transport-planner`, `transport-planner-critic`, `writer`, `writer-critic`,
+  `designer`, `designer-critic`, `verifier`.
+- [ ] All 6 mandatory skills are listed in `workflow_audit.skills_executed`:
+  `discover-destination`, `plan-itinerary`, `plan-transport`,
+  `write-guide`, `design-html`, `review-output`.
+- [ ] Output artifacts exist for each pipeline step (see Output Files below).
+
 ### Output Files
 
 - [ ] `outputs/html/{slug}.html` + `site.css` exist.

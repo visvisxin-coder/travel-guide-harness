@@ -180,6 +180,54 @@ if (guide.food) {
   }
 }
 
+// ─── 工作流审计检查 ──────────────────────────────────────────────
+
+const MANDATORY_AGENTS = [
+  "orchestrator", "researcher", "researcher-critic",
+  "route-planner", "route-planner-critic",
+  "transport-planner", "transport-planner-critic",
+  "writer", "writer-critic",
+  "designer", "designer-critic",
+  "verifier"
+];
+
+const MANDATORY_SKILLS = [
+  "discover-destination", "plan-itinerary", "plan-transport",
+  "write-guide", "design-html", "review-output"
+];
+
+if (guide.workflow_audit) {
+  if (!Array.isArray(guide.workflow_audit.agents_invoked)) {
+    errors.push("workflow_audit.agents_invoked 必须是数组");
+  } else {
+    for (const agent of MANDATORY_AGENTS) {
+      if (!guide.workflow_audit.agents_invoked.includes(agent)) {
+        errors.push(`工作流缺失: agent "${agent}" 未被调用`);
+      }
+    }
+    const extraAgents = guide.workflow_audit.agents_invoked.filter(
+      (a) => !MANDATORY_AGENTS.includes(a)
+    );
+    if (extraAgents.length) {
+      console.warn(`⚠️  workflow_audit 包含非标准 agent: ${extraAgents.join(", ")}`);
+    }
+  }
+
+  if (!Array.isArray(guide.workflow_audit.skills_executed)) {
+    errors.push("workflow_audit.skills_executed 必须是数组");
+  } else {
+    for (const skill of MANDATORY_SKILLS) {
+      if (!guide.workflow_audit.skills_executed.includes(skill)) {
+        errors.push(`工作流缺失: skill "${skill}" 未执行`);
+      }
+    }
+  }
+} else {
+  console.warn("⚠️  警告: JSON 中缺少 workflow_audit 字段，无法验证工作流完整性");
+}
+
+// ─── 错误汇总 ────────────────────────────────────────────────────
+
 if (errors.length) {
   console.error("Validation failed:");
   for (const error of errors) console.error(`- ${error}`);

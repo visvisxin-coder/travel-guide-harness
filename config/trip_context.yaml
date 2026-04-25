@@ -1,5 +1,5 @@
 trip_context:
-  city: 深圳
+  city: ""  # 在此填写城市名
   visit_type: first_time
   # Options:
   # - first_time: 第一次去，优先经典地标和城市名片
@@ -26,4 +26,3 @@ trip_context:
     experiences: []
 
   notes: ""
-

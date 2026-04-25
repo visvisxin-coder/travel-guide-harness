@@ -16,27 +16,45 @@
   "trip_context": {
     "visit_type": "return_visit",
     "visited_before": {
-      "attractions": ["外滩", "南京东路"],
+      "attractions": [
+        "外滩",
+        "南京东路"
+      ],
       "neighborhoods": [],
       "restaurants": [],
       "food_categories": []
     },
     "exclude": {
-      "attractions": ["城隍庙"],
+      "attractions": [
+        "城隍庙"
+      ],
       "neighborhoods": [],
       "restaurants": [],
       "food_categories": [],
-      "experiences": ["纯打卡拍照"]
+      "experiences": [
+        "纯打卡拍照"
+      ]
     },
     "prioritize": {
-      "neighborhoods": ["徐汇", "浦东滨江"],
-      "themes": ["街区漫步", "展览", "轻松餐食"],
+      "neighborhoods": [
+        "徐汇",
+        "浦东滨江"
+      ],
+      "themes": [
+        "街区漫步",
+        "展览",
+        "轻松餐食"
+      ],
       "food_categories": [],
       "experiences": []
     }
   },
   "overview": {
-    "best_for": ["再次来上海", "想避开经典游客线", "喜欢轻松街区"],
+    "best_for": [
+      "再次来上海",
+      "想避开经典游客线",
+      "喜欢轻松街区"
+    ],
     "pace": "轻松",
     "budget_level": "中等",
     "route_logic": "避开已去过的外滩、南京东路和城隍庙，选择街区、展览和滨江空间。"
@@ -86,7 +104,9 @@
   ],
   "transport": {
     "main": "地铁 + 步行 + 短途打车",
-    "tips": ["避开已去过的经典景区动线，减少跨城折返。"]
+    "tips": [
+      "避开已去过的经典景区动线，减少跨城折返。"
+    ]
   },
   "metro_map": {
     "enabled": true,
@@ -94,8 +114,13 @@
     "alt": "上海地铁线简化示意图",
     "caption": "本攻略相关地铁线示意",
     "disclaimer": "示意图仅用于理解路线，实际乘车请以官方地铁图和导航为准。",
-    "related_lines": ["10", "11"],
-    "related_stations": ["交通大学"],
+    "related_lines": [
+      "10",
+      "11"
+    ],
+    "related_stations": [
+      "交通大学"
+    ],
     "last_checked": "2026-04-25"
   },
   "transport_plan": {
@@ -109,22 +134,31 @@
             "from": "武康路与湖南路街区",
             "to": "徐汇书院或周边展览",
             "recommended_mode": "walking_or_taxi",
-            "alternatives": ["步行", "短途打车"],
+            "alternatives": [
+              "步行",
+              "短途打车"
+            ],
             "estimated_time": "约 10-25 分钟",
             "estimated_cost": "步行免费，打车按实时价格",
             "why": "区域相对集中，体力好可步行，雨天可打车。",
-            "pain_points": ["雨天步行体验下降"],
+            "pain_points": [
+              "雨天步行体验下降"
+            ],
             "booking_or_payment_notes": "展览需出行前确认预约。"
           },
           {
             "from": "徐汇书院或周边展览",
             "to": "安福路周边晚餐",
             "recommended_mode": "walking",
-            "alternatives": ["短途打车"],
+            "alternatives": [
+              "短途打车"
+            ],
             "estimated_time": "约 10-20 分钟",
             "estimated_cost": "免费",
             "why": "晚餐前的短距离街区步行更自然。",
-            "pain_points": ["热门餐厅可能排队"],
+            "pain_points": [
+              "热门餐厅可能排队"
+            ],
             "booking_or_payment_notes": "建议提前预约晚餐。"
           }
         ]
@@ -139,8 +173,13 @@
         "name": "安福路周边",
         "type": "food_and_neighborhood",
         "trend_reason": "常被推荐为咖啡、买手店和轻餐街区。",
-        "fit_for": ["再次旅游", "街区漫步"],
-        "caveats": ["热门店可能排队"],
+        "fit_for": [
+          "再次旅游",
+          "街区漫步"
+        ],
+        "caveats": [
+          "热门店可能排队"
+        ],
         "recommended_action": "optional",
         "source_note": "适合作为附近备选。",
         "last_checked": "2026-04-25"
@@ -152,6 +191,29 @@
       "scenario": "雨天",
       "plan": "减少街区步行，把展览和书店作为主线。"
     }
-  ]
+  ],
+  "workflow_audit": {
+    "agents_invoked": [
+      "orchestrator",
+      "researcher",
+      "researcher-critic",
+      "route-planner",
+      "route-planner-critic",
+      "transport-planner",
+      "transport-planner-critic",
+      "writer",
+      "writer-critic",
+      "designer",
+      "designer-critic",
+      "verifier"
+    ],
+    "skills_executed": [
+      "discover-destination",
+      "plan-itinerary",
+      "plan-transport",
+      "write-guide",
+      "design-html",
+      "review-output"
+    ]
+  }
 }
-

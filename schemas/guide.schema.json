@@ -175,6 +175,48 @@
           "plan": { "type": "string" }
         }
       }
+    },
+    "workflow_audit": {
+      "type": "object",
+      "required": ["agents_invoked", "skills_executed"],
+      "properties": {
+        "agents_invoked": {
+          "type": "array",
+          "minItems": 12,
+          "items": {
+            "type": "string",
+            "enum": [
+              "orchestrator",
+              "researcher",
+              "researcher-critic",
+              "route-planner",
+              "route-planner-critic",
+              "transport-planner",
+              "transport-planner-critic",
+              "writer",
+              "writer-critic",
+              "designer",
+              "designer-critic",
+              "verifier"
+            ]
+          }
+        },
+        "skills_executed": {
+          "type": "array",
+          "minItems": 6,
+          "items": {
+            "type": "string",
+            "enum": [
+              "discover-destination",
+              "plan-itinerary",
+              "plan-transport",
+              "write-guide",
+              "design-html",
+              "review-output"
+            ]
+          }
+        }
+      }
     }
   },
   "$defs": {

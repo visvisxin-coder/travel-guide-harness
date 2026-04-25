@@ -80,6 +80,18 @@ Run the full lightweight project checks (validate + render + verify files exist)
 npm test
 ```
 
+Audit workflow completeness — check that all 12 agents and 6 skills were invoked:
+
+```bash
+npm run audit
+```
+
+Or audit a specific guide:
+
+```bash
+node scripts/audit_workflow.js content/structured/changsha-5days.json
+```
+
 Try with the return-visit example:
 
 ```bash
