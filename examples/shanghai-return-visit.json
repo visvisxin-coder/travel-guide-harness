@@ -1,0 +1,157 @@
+{
+  "slug": "shanghai-return-visit",
+  "city": "上海",
+  "title": "上海再次旅游 2 日轻探索",
+  "subtitle": "避开已去过的外滩和南京东路，转向街区、展览与滨江慢行",
+  "language": "zh-CN",
+  "last_checked": "2026-04-25",
+  "traveler_profile": "first_time_city_walk",
+  "cover": {
+    "image": "assets/images/covers/shanghai-cover.svg",
+    "alt": "上海外滩与浦东天际线的编辑风格封面图",
+    "caption": "上海城市天际线",
+    "credit": "Generated placeholder for layout development",
+    "safe_overlay_area": "left-bottom"
+  },
+  "trip_context": {
+    "visit_type": "return_visit",
+    "visited_before": {
+      "attractions": ["外滩", "南京东路"],
+      "neighborhoods": [],
+      "restaurants": [],
+      "food_categories": []
+    },
+    "exclude": {
+      "attractions": ["城隍庙"],
+      "neighborhoods": [],
+      "restaurants": [],
+      "food_categories": [],
+      "experiences": ["纯打卡拍照"]
+    },
+    "prioritize": {
+      "neighborhoods": ["徐汇", "浦东滨江"],
+      "themes": ["街区漫步", "展览", "轻松餐食"],
+      "food_categories": [],
+      "experiences": []
+    }
+  },
+  "overview": {
+    "best_for": ["再次来上海", "想避开经典游客线", "喜欢轻松街区"],
+    "pace": "轻松",
+    "budget_level": "中等",
+    "route_logic": "避开已去过的外滩、南京东路和城隍庙，选择街区、展览和滨江空间。"
+  },
+  "days": [
+    {
+      "day": 1,
+      "title": "徐汇街区与展览",
+      "theme": "从街区进入城市日常",
+      "segments": [
+        {
+          "time": "10:30",
+          "period": "上午",
+          "place": "武康路与湖南路街区",
+          "duration": "2h",
+          "transport": "地铁至交通大学站",
+          "budget": "咖啡或简餐人均约 50-120 元",
+          "why": "适合再次来上海时放慢节奏，观察街区和建筑。"
+        },
+        {
+          "time": "14:00",
+          "period": "下午",
+          "place": "徐汇书院或周边展览",
+          "duration": "2h",
+          "transport": "步行或短途打车",
+          "budget": "需按具体展览确认",
+          "why": "给行程加入室内内容，避开纯打卡。"
+        },
+        {
+          "time": "18:30",
+          "period": "晚上",
+          "place": "安福路周边晚餐",
+          "duration": "2h",
+          "transport": "步行",
+          "budget": "人均约 100-250 元",
+          "why": "餐饮选择多，适合作为轻松收尾。"
+        }
+      ]
+    }
+  ],
+  "food": [
+    {
+      "category": "街区轻餐",
+      "note": "优先选择离当天路线近、可预约、不需长时间排队的店。",
+      "budget": "人均 80-180 元"
+    }
+  ],
+  "transport": {
+    "main": "地铁 + 步行 + 短途打车",
+    "tips": ["避开已去过的经典景区动线，减少跨城折返。"]
+  },
+  "metro_map": {
+    "enabled": true,
+    "image": "assets/maps/metro/shanghai-metro-schematic.svg",
+    "alt": "上海地铁线简化示意图",
+    "caption": "本攻略相关地铁线示意",
+    "disclaimer": "示意图仅用于理解路线，实际乘车请以官方地铁图和导航为准。",
+    "related_lines": ["10", "11"],
+    "related_stations": ["交通大学"],
+    "last_checked": "2026-04-25"
+  },
+  "transport_plan": {
+    "preference": "mixed",
+    "summary": "本路线以步行和短途打车为主，地铁用于进出徐汇区域。",
+    "days": [
+      {
+        "day": 1,
+        "legs": [
+          {
+            "from": "武康路与湖南路街区",
+            "to": "徐汇书院或周边展览",
+            "recommended_mode": "walking_or_taxi",
+            "alternatives": ["步行", "短途打车"],
+            "estimated_time": "约 10-25 分钟",
+            "estimated_cost": "步行免费，打车按实时价格",
+            "why": "区域相对集中，体力好可步行，雨天可打车。",
+            "pain_points": ["雨天步行体验下降"],
+            "booking_or_payment_notes": "展览需出行前确认预约。"
+          },
+          {
+            "from": "徐汇书院或周边展览",
+            "to": "安福路周边晚餐",
+            "recommended_mode": "walking",
+            "alternatives": ["短途打车"],
+            "estimated_time": "约 10-20 分钟",
+            "estimated_cost": "免费",
+            "why": "晚餐前的短距离街区步行更自然。",
+            "pain_points": ["热门餐厅可能排队"],
+            "booking_or_payment_notes": "建议提前预约晚餐。"
+          }
+        ]
+      }
+    ]
+  },
+  "social_trends": {
+    "purpose": "reference",
+    "source_policy": "社交平台热度仅作灵感参考，是否进入主路线需看路线适配、真实性和用户偏好。",
+    "items": [
+      {
+        "name": "安福路周边",
+        "type": "food_and_neighborhood",
+        "trend_reason": "常被推荐为咖啡、买手店和轻餐街区。",
+        "fit_for": ["再次旅游", "街区漫步"],
+        "caveats": ["热门店可能排队"],
+        "recommended_action": "optional",
+        "source_note": "适合作为附近备选。",
+        "last_checked": "2026-04-25"
+      }
+    ]
+  },
+  "backup_plans": [
+    {
+      "scenario": "雨天",
+      "plan": "减少街区步行，把展览和书店作为主线。"
+    }
+  ]
+}
+

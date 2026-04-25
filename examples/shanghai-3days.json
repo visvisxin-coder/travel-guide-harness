@@ -1,0 +1,311 @@
+{
+  "slug": "shanghai-3days",
+  "city": "上海",
+  "title": "上海 3 日城市漫步攻略",
+  "subtitle": "第一次来上海：外滩、老城厢、武康路与浦东天际线",
+  "language": "zh-CN",
+  "last_checked": "2026-04-25",
+  "traveler_profile": "first_time_city_walk",
+  "cover": {
+    "image": "assets/images/covers/shanghai-cover.svg",
+    "alt": "上海外滩与浦东天际线的编辑风格封面图",
+    "caption": "上海城市天际线",
+    "credit": "Generated placeholder for layout development",
+    "safe_overlay_area": "left-bottom"
+  },
+  "trip_context": {
+    "visit_type": "first_time",
+    "visited_before": {
+      "attractions": [],
+      "neighborhoods": [],
+      "restaurants": [],
+      "food_categories": []
+    },
+    "exclude": {
+      "attractions": [],
+      "neighborhoods": [],
+      "restaurants": [],
+      "food_categories": [],
+      "experiences": []
+    },
+    "prioritize": {
+      "neighborhoods": [],
+      "themes": ["经典地标", "城市漫步", "本地美食"],
+      "food_categories": [],
+      "experiences": []
+    }
+  },
+  "overview": {
+    "best_for": ["第一次来上海", "喜欢城市漫步", "想兼顾经典地标和本地街区"],
+    "pace": "中等",
+    "budget_level": "中等",
+    "route_logic": "先看经典城市名片，再进入老城厢和街区生活，最后用浦东天际线收束。"
+  },
+  "days": [
+    {
+      "day": 1,
+      "title": "外滩与老城厢",
+      "theme": "上海的第一眼",
+      "segments": [
+        {
+          "time": "09:30",
+          "period": "上午",
+          "place": "豫园与城隍庙周边",
+          "duration": "2h",
+          "transport": "地铁 10/14 号线豫园站",
+          "budget": "门票与小吃按实际选择",
+          "why": "适合作为第一站，能快速进入老城厢和传统商业街氛围。"
+        },
+        {
+          "time": "13:30",
+          "period": "下午",
+          "place": "外滩万国建筑群",
+          "duration": "2h",
+          "transport": "从豫园步行或短途打车",
+          "budget": "免费",
+          "why": "上海最经典的城市景观，下午适合看建筑细节，傍晚适合等灯光。"
+        },
+        {
+          "time": "18:30",
+          "period": "晚上",
+          "place": "南京东路 / 外滩夜景",
+          "duration": "2h",
+          "transport": "步行",
+          "budget": "晚餐人均约 80-180 元",
+          "why": "把第一天收在最有辨识度的夜景里，路线不折腾。"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "武康路、徐汇与博物馆",
+      "theme": "街区、建筑与慢节奏",
+      "segments": [
+        {
+          "time": "10:00",
+          "period": "上午",
+          "place": "武康路与湖南路街区",
+          "duration": "2.5h",
+          "transport": "地铁 10/11 号线交通大学站",
+          "budget": "咖啡或简餐人均约 50-120 元",
+          "why": "适合步行观察历史建筑和街区尺度，不需要赶场。"
+        },
+        {
+          "time": "14:00",
+          "period": "下午",
+          "place": "上海博物馆或徐家汇书院",
+          "duration": "2-3h",
+          "transport": "地铁或打车 15-25 分钟",
+          "budget": "多数公共文化空间免费或低价，需提前确认预约规则",
+          "why": "给第二天加入室内内容，天气不好也稳。"
+        },
+        {
+          "time": "19:00",
+          "period": "晚上",
+          "place": "衡山路 / 安福路周边晚餐",
+          "duration": "2h",
+          "transport": "步行或短途打车",
+          "budget": "人均约 100-250 元",
+          "why": "用轻松的街区晚餐结束，适合不想跑太远的行程。"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "浦东天际线与滨江",
+      "theme": "现代上海",
+      "segments": [
+        {
+          "time": "10:00",
+          "period": "上午",
+          "place": "陆家嘴环线步行",
+          "duration": "2h",
+          "transport": "地铁 2 号线陆家嘴站",
+          "budget": "免费",
+          "why": "近距离看上海中心、金茂、环球金融中心的城市尺度。"
+        },
+        {
+          "time": "14:00",
+          "period": "下午",
+          "place": "浦东美术馆或滨江步道",
+          "duration": "2-3h",
+          "transport": "步行",
+          "budget": "展览票价需以当天官方信息为准",
+          "why": "把浦江景观和室内展览结合，降低天气风险。"
+        },
+        {
+          "time": "18:00",
+          "period": "晚上",
+          "place": "北外滩或浦东滨江夜景",
+          "duration": "1.5h",
+          "transport": "地铁或打车",
+          "budget": "免费",
+          "why": "从不同角度回看城市天际线，适合收尾。"
+        }
+      ]
+    }
+  ],
+  "food": [
+    {
+      "category": "本帮菜",
+      "note": "优先选择离当日路线近、评分稳定、可预约的店。",
+      "budget": "人均 100-220 元"
+    },
+    {
+      "category": "小吃",
+      "note": "生煎、小笼、葱油拌面适合穿插在老城厢或街区路线中。",
+      "budget": "人均 25-60 元"
+    }
+  ],
+  "transport": {
+    "main": "地铁 + 步行 + 短途打车",
+    "tips": [
+      "跨江移动优先地铁，夜间或带行李可打车。",
+      "每天步行较多，建议穿舒适鞋。",
+      "热门展馆和景点以官方预约信息为准。"
+    ]
+  },
+  "metro_map": {
+    "enabled": true,
+    "image": "assets/maps/metro/shanghai-metro-schematic.svg",
+    "alt": "上海地铁线简化示意图",
+    "caption": "本攻略相关地铁线示意",
+    "disclaimer": "示意图仅用于理解路线，实际乘车请以官方地铁图和导航为准。",
+    "related_lines": ["1", "2", "10", "11", "14"],
+    "related_stations": ["豫园", "交通大学", "陆家嘴", "人民广场"],
+    "last_checked": "2026-04-25"
+  },
+  "transport_plan": {
+    "preference": "mixed",
+    "summary": "上海市区经典路线优先地铁和步行；跨区、夜间、带行李或体力下降时用短途打车补足。",
+    "days": [
+      {
+        "day": 1,
+        "legs": [
+          {
+            "from": "豫园与城隍庙周边",
+            "to": "外滩万国建筑群",
+            "recommended_mode": "walking_or_taxi",
+            "alternatives": ["步行", "短途打车"],
+            "estimated_time": "步行约 20-30 分钟，打车约 10-15 分钟",
+            "estimated_cost": "步行免费，打车按实时价格",
+            "why": "两地距离不远，天气好适合步行串起老城厢和外滩；累了就打车。",
+            "pain_points": ["节假日外滩周边拥堵", "雨天步行体验下降"],
+            "booking_or_payment_notes": "打车价格和上车点以实时平台为准。"
+          },
+          {
+            "from": "外滩万国建筑群",
+            "to": "南京东路 / 外滩夜景",
+            "recommended_mode": "walking",
+            "alternatives": ["地铁一站不推荐，换乘和进站成本较高"],
+            "estimated_time": "步行约 10-20 分钟",
+            "estimated_cost": "免费",
+            "why": "这一段是核心步行观景区，步行体验优于交通工具。",
+            "pain_points": ["夜间人流密集", "拍照点可能拥挤"],
+            "booking_or_payment_notes": "无需预约。"
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "legs": [
+          {
+            "from": "武康路与湖南路街区",
+            "to": "上海博物馆或徐家汇书院",
+            "recommended_mode": "subway_or_taxi",
+            "alternatives": ["地铁", "短途打车"],
+            "estimated_time": "约 15-30 分钟，视具体馆址而定",
+            "estimated_cost": "地铁低成本，打车按实时价格",
+            "why": "下午切换到室内内容，地铁稳定；多人或下雨时打车更省力。",
+            "pain_points": ["部分展馆需预约", "雨天打车等待时间可能变长"],
+            "booking_or_payment_notes": "展馆预约和开放时间需出行前确认。"
+          },
+          {
+            "from": "上海博物馆或徐家汇书院",
+            "to": "衡山路 / 安福路周边晚餐",
+            "recommended_mode": "taxi",
+            "alternatives": ["地铁 + 步行"],
+            "estimated_time": "约 15-25 分钟",
+            "estimated_cost": "打车按实时价格",
+            "why": "晚餐前减少换乘和步行消耗，保留体力给街区散步。",
+            "pain_points": ["晚高峰可能拥堵", "热门餐厅需排队或预约"],
+            "booking_or_payment_notes": "晚餐建议提前预约或准备备选。"
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "legs": [
+          {
+            "from": "陆家嘴环线步行",
+            "to": "浦东美术馆或滨江步道",
+            "recommended_mode": "walking",
+            "alternatives": ["短途打车"],
+            "estimated_time": "步行约 10-25 分钟，视具体入口而定",
+            "estimated_cost": "免费",
+            "why": "浦东核心区景点集中，步行能保留看城市天际线的体验。",
+            "pain_points": ["夏季暴晒", "雨天滨江体验下降"],
+            "booking_or_payment_notes": "展览票价和预约规则需出行前确认。"
+          },
+          {
+            "from": "浦东美术馆或滨江步道",
+            "to": "北外滩或浦东滨江夜景",
+            "recommended_mode": "subway_or_taxi",
+            "alternatives": ["地铁", "打车"],
+            "estimated_time": "约 20-40 分钟",
+            "estimated_cost": "地铁低成本，打车按实时价格",
+            "why": "跨区域看夜景时地铁更稳，夜间体力不足则打车。",
+            "pain_points": ["夜景点返程人流集中", "打车上车点可能需要步行"],
+            "booking_or_payment_notes": "夜间返程建议提前确认地铁末班车时间。"
+          }
+        ]
+      }
+    ]
+  },
+  "social_trends": {
+    "purpose": "reference",
+    "source_policy": "社交平台热度仅作灵感参考，是否进入主路线需看路线适配、真实性和用户偏好。",
+    "items": [
+      {
+        "name": "武康路街区",
+        "type": "neighborhood",
+        "trend_reason": "常见于城市漫步、历史建筑和街拍路线分享。",
+        "fit_for": ["第一次来上海", "喜欢城市漫步", "喜欢街区摄影"],
+        "caveats": ["节假日人流密集", "部分点位拍照价值高于游览价值"],
+        "recommended_action": "include",
+        "source_note": "社交平台热度需结合现场人流和个人兴趣判断。",
+        "last_checked": "2026-04-25"
+      },
+      {
+        "name": "安福路周边",
+        "type": "food_and_neighborhood",
+        "trend_reason": "常被推荐为咖啡、买手店和轻餐街区。",
+        "fit_for": ["喜欢轻松街区", "想安排晚餐或下午茶"],
+        "caveats": ["热门店可能排队", "不适合作为唯一核心景点"],
+        "recommended_action": "optional",
+        "source_note": "适合作为 Day 2 附近备选，而不是专门绕路。",
+        "last_checked": "2026-04-25"
+      },
+      {
+        "name": "临时展览 / 快闪活动",
+        "type": "seasonal",
+        "trend_reason": "短周期活动在社交平台传播快，适合再次来上海的人寻找新鲜感。",
+        "fit_for": ["再次旅游", "喜欢展览", "雨天备选"],
+        "caveats": ["展期、票价和预约变化快", "需要出行前确认"],
+        "recommended_action": "verify",
+        "source_note": "需以官方场馆或活动页面为准。",
+        "last_checked": "2026-04-25"
+      }
+    ]
+  },
+  "backup_plans": [
+    {
+      "scenario": "雨天",
+      "plan": "减少外滩和滨江停留，把博物馆、书院、商场和展览作为主线。"
+    },
+    {
+      "scenario": "体力不足",
+      "plan": "每天保留一个主区域，删除下午或晚上的第二个街区点。"
+    }
+  ]
+}

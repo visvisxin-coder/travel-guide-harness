@@ -1,0 +1,32 @@
+transport_preferences:
+  preferred_mode: mixed
+  # Options:
+  # - mixed: 按路线选择最方便的方式
+  # - subway_first: 优先地铁
+  # - taxi_first: 优先打车 / 网约车
+  # - bus_first: 优先公交
+  # - walking_first: 优先步行
+  # - rental_car: 优先租车 / 自驾
+
+  acceptable_modes:
+    - subway
+    - taxi
+    - walking
+    - bus
+
+  avoid_modes: []
+
+  constraints:
+    has_luggage: false
+    traveling_with_children: false
+    traveling_with_elderly: false
+    avoid_many_transfers: true
+    avoid_long_walks: false
+    late_night_safe_return: true
+    max_single_walk_minutes: 25
+    max_transfer_count: 2
+
+  cost_sensitivity: medium
+  convenience_priority: high
+  notes: ""
+

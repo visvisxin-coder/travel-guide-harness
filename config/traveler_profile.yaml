@@ -1,0 +1,24 @@
+traveler_profile:
+  name: first_time_city_walk
+  language: zh-CN
+  traveler_type: 第一次来这座城市
+  pace: 中等
+  budget: 中等
+  interests:
+    - 城市漫步
+    - 本地美食
+    - 博物馆
+    - 经典地标
+  avoid:
+    - 每天换太多地点
+    - 过度网红化
+    - 需要很早起床的安排
+  repeat_visit_preferences:
+    filter_visited_attractions: true
+    filter_visited_restaurants: true
+    allow_classic_landmarks_only_if_requested: true
+    prefer_new_neighborhoods: true
+    prefer_seasonal_or_temporary_events: true
+  accessibility:
+    walking_tolerance_per_day: 12000 steps
+    needs_low_physical_backup: true

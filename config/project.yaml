@@ -1,0 +1,21 @@
+project:
+  name: Travel Guide Harness
+  default_language: zh-CN
+  primary_content_format: json
+  primary_render_output: html
+  final_outputs:
+    - html
+    - pdf
+    - png
+
+quality:
+  draft_gate: 70
+  preview_gate: 80
+  client_ready_gate: 90
+  publication_gate: 95
+
+rendering:
+  html_first: true
+  default_pdf_size: A4
+  default_image_width: 1080
+  default_image_format: png

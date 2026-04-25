@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">上海地铁线示意图</title>
+  <desc id="desc">用于攻略版式展示的简化地铁示意图，不代表官方线路图。</desc>
+  <rect width="1200" height="720" fill="#fffdf8"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="18">
+    <path d="M120 360 H1080" stroke="#d9232e"/>
+    <path d="M600 90 V630" stroke="#1f78c8"/>
+    <path d="M180 560 C320 450 410 430 520 430 H980" stroke="#41a85f"/>
+    <path d="M260 150 C410 250 520 285 690 300 C820 312 900 372 1010 500" stroke="#8a4eb8"/>
+    <path d="M160 250 H420 C540 250 590 310 660 360 L930 630" stroke="#f4a51c"/>
+  </g>
+  <g fill="#1f2933" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="26" font-weight="700">
+    <text x="96" y="335">1</text>
+    <text x="618" y="84">2</text>
+    <text x="148" y="594">10</text>
+    <text x="230" y="136">11</text>
+    <text x="130" y="238">14</text>
+  </g>
+  <g fill="#fff" stroke="#1f2933" stroke-width="5">
+    <circle cx="600" cy="360" r="24"/>
+    <circle cx="420" cy="250" r="20"/>
+    <circle cx="520" cy="430" r="20"/>
+    <circle cx="690" cy="300" r="20"/>
+    <circle cx="930" cy="630" r="20"/>
+  </g>
+  <g fill="#1f2933" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24">
+    <text x="632" y="354">人民广场</text>
+    <text x="438" y="242">豫园</text>
+    <text x="540" y="424">交通大学</text>
+    <text x="710" y="294">陆家嘴</text>
+    <text x="950" y="624">浦东滨江</text>
+  </g>
+  <text x="60" y="670" fill="#667085" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22">
+    简化示意图：仅用于攻略路线理解，实际乘车请以官方地铁图和导航为准。
+  </text>
+</svg>
+

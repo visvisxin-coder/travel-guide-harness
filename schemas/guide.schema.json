@@ -1,0 +1,254 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/travel-guide-harness/guide.schema.json",
+  "title": "Travel Guide",
+  "type": "object",
+  "required": [
+    "slug",
+    "city",
+    "title",
+    "subtitle",
+    "last_checked",
+    "traveler_profile",
+    "trip_context",
+    "overview",
+    "days",
+    "transport",
+    "backup_plans"
+  ],
+  "properties": {
+    "slug": { "type": "string", "minLength": 1 },
+    "city": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "subtitle": { "type": "string" },
+    "language": { "type": "string" },
+    "last_checked": { "type": "string" },
+    "traveler_profile": { "type": "string" },
+    "cover": {
+      "type": "object",
+      "required": ["image", "alt", "caption", "credit"],
+      "properties": {
+        "image": { "type": "string" },
+        "alt": { "type": "string" },
+        "caption": { "type": "string" },
+        "credit": { "type": "string" },
+        "safe_overlay_area": { "type": "string" }
+      }
+    },
+    "trip_context": {
+      "type": "object",
+      "required": ["visit_type", "visited_before", "exclude"],
+      "properties": {
+        "visit_type": {
+          "type": "string",
+          "enum": ["first_time", "return_visit", "local_refresh"]
+        },
+        "visited_before": { "$ref": "#/$defs/filterSet" },
+        "exclude": {
+          "allOf": [
+            { "$ref": "#/$defs/filterSet" },
+            {
+              "type": "object",
+              "properties": {
+                "experiences": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                }
+              }
+            }
+          ]
+        },
+        "prioritize": {
+          "type": "object",
+          "properties": {
+            "neighborhoods": { "type": "array", "items": { "type": "string" } },
+            "themes": { "type": "array", "items": { "type": "string" } },
+            "food_categories": { "type": "array", "items": { "type": "string" } },
+            "experiences": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    },
+    "overview": {
+      "type": "object",
+      "required": ["best_for", "pace", "budget_level", "route_logic"],
+      "properties": {
+        "best_for": { "type": "array", "items": { "type": "string" } },
+        "pace": { "type": "string" },
+        "budget_level": { "type": "string" },
+        "route_logic": { "type": "string" }
+      }
+    },
+    "days": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["day", "title", "theme", "segments"],
+        "properties": {
+          "day": { "type": "integer", "minimum": 1 },
+          "title": { "type": "string" },
+          "theme": { "type": "string" },
+          "segments": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 4,
+            "items": { "$ref": "#/$defs/segment" }
+          }
+        }
+      }
+    },
+    "food": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["category", "note", "budget"],
+        "properties": {
+          "category": { "type": "string" },
+          "note": { "type": "string" },
+          "budget": { "type": "string" }
+        }
+      }
+    },
+    "transport": {
+      "type": "object",
+      "required": ["main", "tips"],
+      "properties": {
+        "main": { "type": "string" },
+        "tips": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "metro_map": {
+      "type": "object",
+      "required": ["enabled", "image", "alt", "caption", "disclaimer", "last_checked"],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "image": { "type": "string" },
+        "alt": { "type": "string" },
+        "caption": { "type": "string" },
+        "disclaimer": { "type": "string" },
+        "related_lines": { "type": "array", "items": { "type": "string" } },
+        "related_stations": { "type": "array", "items": { "type": "string" } },
+        "last_checked": { "type": "string" }
+      }
+    },
+    "transport_plan": {
+      "type": "object",
+      "properties": {
+        "preference": { "type": "string" },
+        "summary": { "type": "string" },
+        "days": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["day", "legs"],
+            "properties": {
+              "day": { "type": "integer" },
+              "legs": {
+                "type": "array",
+                "items": { "$ref": "#/$defs/transportLeg" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "social_trends": {
+      "type": "object",
+      "properties": {
+        "purpose": { "type": "string" },
+        "source_policy": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/socialTrendItem" }
+        }
+      }
+    },
+    "backup_plans": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["scenario", "plan"],
+        "properties": {
+          "scenario": { "type": "string" },
+          "plan": { "type": "string" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "filterSet": {
+      "type": "object",
+      "properties": {
+        "attractions": { "type": "array", "items": { "type": "string" } },
+        "neighborhoods": { "type": "array", "items": { "type": "string" } },
+        "restaurants": { "type": "array", "items": { "type": "string" } },
+        "food_categories": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "segment": {
+      "type": "object",
+      "required": ["time", "period", "place", "duration", "transport", "budget", "why"],
+      "properties": {
+        "time": { "type": "string" },
+        "period": { "type": "string" },
+        "place": { "type": "string" },
+        "duration": { "type": "string" },
+        "transport": { "type": "string" },
+        "budget": { "type": "string" },
+        "why": { "type": "string" }
+      }
+    },
+    "transportLeg": {
+      "type": "object",
+      "required": [
+        "from",
+        "to",
+        "recommended_mode",
+        "alternatives",
+        "estimated_time",
+        "estimated_cost",
+        "why",
+        "pain_points"
+      ],
+      "properties": {
+        "from": { "type": "string" },
+        "to": { "type": "string" },
+        "recommended_mode": { "type": "string" },
+        "alternatives": { "type": "array", "items": { "type": "string" } },
+        "estimated_time": { "type": "string" },
+        "estimated_cost": { "type": "string" },
+        "why": { "type": "string" },
+        "pain_points": { "type": "array", "items": { "type": "string" } },
+        "booking_or_payment_notes": { "type": "string" }
+      }
+    },
+    "socialTrendItem": {
+      "type": "object",
+      "required": [
+        "name",
+        "type",
+        "trend_reason",
+        "fit_for",
+        "caveats",
+        "recommended_action",
+        "source_note",
+        "last_checked"
+      ],
+      "properties": {
+        "name": { "type": "string" },
+        "type": { "type": "string" },
+        "trend_reason": { "type": "string" },
+        "fit_for": { "type": "array", "items": { "type": "string" } },
+        "caveats": { "type": "array", "items": { "type": "string" } },
+        "recommended_action": {
+          "type": "string",
+          "enum": ["include", "optional", "skip", "verify"]
+        },
+        "source_note": { "type": "string" },
+        "last_checked": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.DS_Store
+**/.DS_Store
+
+node_modules/
+
+# Generated outputs. Keep directory structure with .gitkeep when needed.
+outputs/html/*
+outputs/images/*
+outputs/pdf/*
+!outputs/html/.gitkeep
+!outputs/images/.gitkeep
+!outputs/pdf/.gitkeep
+
+# Local scratch files
+*.log
+*.tmp
+

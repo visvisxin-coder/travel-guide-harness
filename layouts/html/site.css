@@ -1,0 +1,334 @@
+:root {
+  --bg: #f7f2ea;
+  --surface: #fffdf8;
+  --ink: #1f2933;
+  --muted: #64707d;
+  --accent: #2f6f73;
+  --accent-2: #d98245;
+  --line: #ded7cc;
+  --soft: #edf4f1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+.guide-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.html-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 560px;
+  display: grid;
+  align-content: end;
+  padding: 48px;
+  background: linear-gradient(135deg, rgba(47, 111, 115, 0.18), rgba(217, 130, 69, 0.12)), var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.html-hero > *:not(.cover-image) {
+  position: relative;
+  z-index: 1;
+}
+
+.cover-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.28;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0;
+}
+
+h1 {
+  max-width: 780px;
+  margin: 12px 0 18px;
+  font-size: 64px;
+  line-height: 1.05;
+}
+
+h2 {
+  margin: 48px 0 18px;
+  font-size: 30px;
+}
+
+h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.subtitle {
+  max-width: 720px;
+  color: var(--muted);
+  font-size: 20px;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+  margin-bottom: 20px;
+}
+
+.pill {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.58);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.overview-item,
+.day-card,
+.transport-card,
+.note-card,
+.metro-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.overview-item {
+  padding: 18px;
+}
+
+.label {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.day-card,
+.transport-card,
+.note-card,
+.metro-card {
+  padding: 22px;
+}
+
+.day-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.segment,
+.transport-leg {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.segment:first-of-type,
+.transport-leg:first-of-type {
+  border-top: 0;
+}
+
+.time {
+  color: var(--accent-2);
+  font-weight: 800;
+}
+
+.mode {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.place {
+  font-weight: 800;
+}
+
+.detail {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.transport-card {
+  margin-top: 18px;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.metro-card {
+  overflow: hidden;
+}
+
+.metro-figure {
+  margin: 0 0 18px;
+}
+
+.metro-figure img {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.metro-figure figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ===== Icon styles ===== */
+
+/* Base icon sizing — applies everywhere including eyebrow */
+.hi {
+  display: inline;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+/* Section heading icons — slightly larger */
+h2 .hi {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  color: var(--accent);
+  stroke: var(--accent);
+}
+
+/* Period icons (morning / afternoon / evening) */
+.hi-sm {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-bottom: 2px;
+}
+
+.period-morning .hi-sm { color: #e8a838; }
+.period-afternoon .hi-sm { color: #d98245; }
+.period-evening .hi-sm { color: #5b6e8a; }
+
+/* Day card arrow icon — small chevron */
+.hi-xs {
+  display: inline;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  margin-right: 4px;
+  opacity: 0.5;
+}
+
+.day-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+/* Eyebrow icon — smaller, inline with text */
+.eyebrow .hi {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 2px;
+  color: var(--accent);
+  stroke: var(--accent);
+}
+
+/* Transport leg mode icon — inline with mode label */
+.time .hi {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+/* Backup plan section cards — soft left border accent */
+.note-card {
+  border-left: 4px solid var(--accent-2);
+  margin-top: 16px;
+}
+
+/* Overview item icons — small decorative SVG icons */
+.ov-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ov-pace {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232f6f73' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpolyline points='12 6 12 12 16 14'/%3E%3C/svg%3E");
+}
+
+.ov-budget {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232f6f73' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2'/%3E%3Cpath d='M12 5a7 7 0 1 0 0 14 7 7 0 1 0 0-14z'/%3E%3C/svg%3E");
+}
+
+.ov-route {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232f6f73' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 3l7.5 2.5L12 3l1.5 2.5L21 3v16l-7.5-2.5L12 21l-1.5-2.5L21 3'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 860px) {
+  .guide-shell {
+    padding: 18px;
+  }
+
+  .html-hero {
+    min-height: 420px;
+    padding: 28px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .overview-grid,
+  .section-grid,
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+}

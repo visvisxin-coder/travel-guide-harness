@@ -1,0 +1,30 @@
+social_trends:
+  enabled: true
+  platforms:
+    - xiaohongshu
+  purpose: reference
+  # purpose:
+  # - reference: 只作为参考模块展示
+  # - route_candidates: 可进入路线候选池，但必须经过 route-planner 审查
+  # - avoid_hype: 重点识别并避开过度营销点位
+
+  categories:
+    - attractions
+    - food
+    - neighborhoods
+    - exhibitions
+    - photo_spots
+    - seasonal
+
+  ranking_policy:
+    use_popularity_as_signal_not_truth: true
+    require_route_fit_before_include: true
+    require_caveats: true
+    filter_excluded_items: true
+
+  default_actions:
+    include: "适合加入主路线"
+    optional: "适合作为附近备选"
+    skip: "不适合本次行程"
+    verify: "热度或信息需进一步确认"
+

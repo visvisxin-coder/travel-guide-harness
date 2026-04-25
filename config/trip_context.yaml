@@ -1,0 +1,29 @@
+trip_context:
+  city: 深圳
+  visit_type: first_time
+  # Options:
+  # - first_time: 第一次去，优先经典地标和城市名片
+  # - return_visit: 再次去，过滤已去过内容，优先新区域、深度体验和主题路线
+  # - local_refresh: 熟悉城市，重点做周末/短线/新店/展览/季节限定
+
+  visited_before:
+    attractions: []
+    neighborhoods: []
+    restaurants: []
+    food_categories: []
+
+  exclude:
+    attractions: []
+    neighborhoods: []
+    restaurants: []
+    food_categories: []
+    experiences: []
+
+  prioritize:
+    neighborhoods: []
+    themes: []
+    food_categories: []
+    experiences: []
+
+  notes: ""
+
